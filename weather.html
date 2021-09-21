@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+<div class="input">
+    <div class="container">
+        <section class="sidebyside">
+            <div class="current-info">
+                <div class="date-container">
+                    <div class="grid-container">
+                        <div class="place-container">
+                            <div class="time-zone" id="time-zone2">Asia/Kolkata</div>
+                            <div class="country" id="country2">IN</div>
+                        </div>
+                        <div class="time-container">
+                            <div class="time" id="time">
+                                12:30 <span id="am-pm">PM</span>
+                            </div>
+                            <div class="date" id="date">
+                                Monday, 24 May
+                            </div>
+                        </div>
+                    </div>
+                    <div class="others" id="current-weather-items"></div>
+                </div>
+            </div>
+            <div class="search-container">
+                <div class="place-container">
+                    <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                    <div class="country" id="country">IN</div>
+                </div>
+                <div class="search-content">
+                    <div class="form-left">
+                        <label for="city1">Enter a city:</label>
+                        <input type="text" class="inputValue" placeholder="Example: Manila">
+                    </div>
+                    <input type="submit" value="Find" class="findbtn">
+                </div>
+                <div class="result-content">
+                    <div class="rcontent">
+                        <div class="weather-result-item">
+                            <p>City</p>
+                            <p class="name"></p>
+                        </div>
+                        <div class="weather-result-item">
+                            <p>Weather</p>
+                            <p class="desc"></p>
+                        </div>
+                        <div class="weather-result-item">
+                            <p>Temperature</p>
+                            <p class="temp"></p>
+                        </div>
+                        <div class="weather-result-item">
+                            <p>Wind Speed</p>
+                            <p class="wind"></p>
+                        </div>
+                        <div class="weather-result-item">
+                            <p>Humidity</p>
+                            <p class="humid"></p>
+                        </div>
+                        <div class="weather-result-item">
+                            <p>Pressure</p>
+                            <p class="pressure"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+        </div>
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thu</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
